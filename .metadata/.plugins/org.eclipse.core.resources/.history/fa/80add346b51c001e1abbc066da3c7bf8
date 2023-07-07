@@ -1,0 +1,24 @@
+package prova;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class Prova {
+
+	private static File prova = new File("prova.txt");
+	
+	public static void main(String[] args) {
+		
+		
+		try {
+			FileUtils.writeStringToFile(prova, "Ciao", "UTF-8");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

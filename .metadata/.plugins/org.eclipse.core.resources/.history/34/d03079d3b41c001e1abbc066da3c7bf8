@@ -1,0 +1,13 @@
+package prova;
+
+public class Prova {
+
+	public static void main(String[] args) {
+		
+		private static File prova = new File("info.txt");
+		
+		FileUtils.writeStringToFile(null, null, null);
+		
+	}
+
+}

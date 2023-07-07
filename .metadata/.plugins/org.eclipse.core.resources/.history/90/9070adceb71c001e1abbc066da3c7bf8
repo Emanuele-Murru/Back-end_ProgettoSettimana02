@@ -1,0 +1,32 @@
+package prova;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class Prova {
+
+	private static File prova = new File("prova.txt");
+	
+	public static void main(String[] args) {
+		
+		
+		try {
+			saveOnDisk("Hello World");
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+		
+		public static void saveOnDisk(String testo) throws IOException {
+			
+			FileUtils.writeStringToFile(prova, testo + System.lineSeparator(), "UTF-8", true);
+
+		}
+		
+	}
+
+

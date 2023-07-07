@@ -1,0 +1,17 @@
+package app;
+
+public abstract class Catalogo {
+	
+	private Long isbnCode;
+	private String titolo;
+	private int annoPubblicazione;
+	private int numPagine;
+	
+	public Catalogo(Long isbnCode, Sring titolo, int annoPubblicazione, int numPagine) {
+		setTitolo(titolo);
+		setAnnoPubblicazione(annoPubblicazione);
+		setNumPagine(numPagine);
+		setIbsnCode(codice);
+	}
+	
+}
