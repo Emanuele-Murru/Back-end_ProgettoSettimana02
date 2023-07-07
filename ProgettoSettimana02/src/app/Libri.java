@@ -1,6 +1,7 @@
 package app;
 
 public class Libri extends Prodotto{
+	
 	private String autore;
 	private String genere;
 	
@@ -26,7 +27,12 @@ public class Libri extends Prodotto{
 		this.genere = genere;
 	}
 	
-//	@Override
-//	public String
+	@Override
+	public void printInfos() {
+		System.out.println("LIBRO:");
+		System.out.println("Codice ISBN, Titolo, Anno, Pagine, Autore, Genere");
+		System.out.println(getIsbnCode(), getTitolo(), getAnnoPubblicazione(),getNumPagine(), getAutore(), getGenere());
+	}
+
 	
 }

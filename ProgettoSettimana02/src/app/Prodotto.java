@@ -46,4 +46,6 @@ public abstract class Prodotto {
 		this.numPagine = numPagine;
 	}
 	
+	public abstract void printInfos();
+	
 }
