@@ -15,7 +15,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		int opzione = -1;
+		int opzione = 1;
 
 		while (opzione != 0) {
 			System.out.println("Digita il numero corrispondente a le seguenti operazioni:");
@@ -199,24 +199,24 @@ public class Main {
 
 				break;
 
-//			case 7:
-//
-//				try {
-//					write(file);
-//					System.out.println("Salvataggio su disco completato.");
-//				} catch (IOException e) {
-//					System.out.println("Errore durante il salvataggio su disco: " + e.getMessage());
-//				}
-//				break;
-//
-//			case 8:
-//				try {
-//					read(file);
-//					System.out.println("Caricamento da disco completato.");
-//				} catch (IOException e) {
-//					System.out.println("Errore durante il caricamento da disco: " + e.getMessage());
-//				}
-//				break;
+			case 7:
+
+				try {
+					write(file);
+					System.out.println("Salvataggio su disco completato.");
+				} catch (IOException e) {
+					System.out.println("Errore durante il salvataggio su disco: " + e.getMessage());
+				}
+				break;
+
+			case 8:
+				try {
+					read(file);
+					System.out.println("Caricamento da disco completato.");
+				} catch (IOException e) {
+					System.out.println("Errore durante il caricamento da disco: " + e.getMessage());
+				}
+				break;
 
 			default:
 				System.out.println("Opzione non valida.");

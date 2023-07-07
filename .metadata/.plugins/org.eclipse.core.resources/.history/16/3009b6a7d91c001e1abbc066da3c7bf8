@@ -24,17 +24,17 @@ public class Riviste extends Prodotto{
 	}
 	
 	@Override
-	public String formattaTextFile() {
+	public String formataTextFile() {
 	    StringBuilder sb = new StringBuilder();
 	    sb.append("RIVISTA:")
-	        .append("Codice ISBN: ").append(getIsbnCode()).append(", ")
+	        .append("Codice ISBN: ").append(getCodiceISBN()).append(", ")
 	        .append("Titolo: ").append(getTitolo()).append(", ")
 	        .append("Anno di Pubblicazione: ").append(getAnnoPubblicazione()).append(", ")
-	        .append("Numero Pagine: ").append(getNumPagine()).append(", ")
-	        .append("Tipo Rivista: ").append(getPeriodicita().toString());
+	        .append("Numero Pagine: ").append(getNumeroPagine()).append(", ")
+	        .append("Tipo Rivista: ").append(getTipoRivista().toString());
 	        
 	    return sb.toString();
 	}
 
 	}
-
+}

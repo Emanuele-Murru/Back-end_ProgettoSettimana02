@@ -48,5 +48,6 @@ public abstract class Prodotto {
 	
 	public abstract void printInfos();
 	
-	public abstract String formattaTextFile();
+	public abstract String formatRigaCatalogo();
+	
 }

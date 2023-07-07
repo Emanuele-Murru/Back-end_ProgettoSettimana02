@@ -15,7 +15,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		int opzione = -1;
+		int opzione = 1;
 
 		while (opzione != 0) {
 			System.out.println("Digita il numero corrispondente a le seguenti operazioni:");
